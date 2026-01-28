@@ -66,8 +66,8 @@
 
 <section>
   <h2>February Special 💕</h2>
-  <p style="text-align:center; font-size:1.2rem;"><strong>$55.55 February Hair Deal</strong></p>
-  <p style="text-align:center;">Quick -weaves • Frontal Wigs / Wig coloring • Half up - Half Down </p>
+  <p style="text-align:center; font-size:1.4rem;"><strong>$55.55 February Hair Deal</strong></p>
+  <p style="text-align:center;">Quick-Weaves • Frontal Wigs • Wig Coloring • Half Up / Half Down</p>
 </section>
 
 <section>
@@ -85,40 +85,84 @@
   </ul>
 </section>
 
+<section>
+  <h2>Video Gallery</h2>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;">
+
+    <iframe src="https://www.instagram.com/reel/REELID/embed"
+      width="100%" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+    <iframe src="https://www.instagram.com/reel/REELID/embed"
+      width="100%" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+    <iframe src="https://www.instagram.com/reel/REELID/embed"
+      width="100%" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+  </div>
+</section>
+
 <section class="cta">
   <h2>Book Now</h2>
-  <p>Please submit a booking request below or DM with your desired style, date, and time.</p>
 
-  <!-- Booking Form -->
-  <form action="https://formspree.io/f/yourformid" method="POST" style="max-width:500px; margin:30px auto; text-align:left;">
-    <label>Name</label><br />
+  <p><strong>Confirmation:</strong> Booking requests are reviewed within 24 hours. Appointments are not confirmed until approved.</p>
+  <p><strong>Deposit:</strong> A non-refundable deposit is required to secure your appointment. Details will be sent after approval.</p>
+
+  <form action="https://formspree.io/f/mbdyrzbj" method="POST"
+    style="max-width:500px; margin:30px auto; text-align:left; background:#fff; padding:25px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,.15);">
+
+    <label>Name</label>
     <input type="text" name="name" required style="width:100%; padding:10px; margin-bottom:10px;" />
 
-    <label>Email</label><br />
+    <label>Email</label>
     <input type="email" name="email" required style="width:100%; padding:10px; margin-bottom:10px;" />
 
-    <label>Service</label><br />
+    <label>Service</label>
     <input type="text" name="service" required style="width:100%; padding:10px; margin-bottom:10px;" />
 
-    <label>Preferred Date & Time</label><br />
+    <label>Preferred Date & Time</label>
     <input type="text" name="datetime" required style="width:100%; padding:10px; margin-bottom:10px;" />
 
-    <label>Additional Notes</label><br />
+    <label>Notes</label>
     <textarea name="message" style="width:100%; padding:10px; margin-bottom:15px;"></textarea>
 
     <button type="submit" class="btn">Submit Booking Request</button>
   </form>
 
-  <!-- Calendar Embed -->
-  <h3 style="margin-top:40px;">Availability Calendar</h3>
-  <iframe src="https://calendar.google.com/calendar/embed?src=9124bce57df15e63b8fba33197f704d8855bc1d15a5156bd6562440183a5462c%40group.calendar.google.com&ctz=America%2FChicago" style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+  <h3>Availability Calendar</h3>
+  <p>Blocked times indicate unavailable slots.</p>
 
-  <a class="btn" href="https://formspree.io/f/mbdyrzbj" target="_blank">Book via Instagram DM</a>
+  <iframe
+    src="https://calendar.google.com/calendar/embed?src=9124bce57df15e63b8fba33197f704d8855bc1d15a5156bd6562440183a5462c%40group.calendar.google.com&ctz=America%2FChicago"
+    style="border:0" width="100%" height="600"></iframe>
+
+  <button class="btn" onclick="document.getElementById('policyModal').style.display='block'">
+    View Policies
+  </button>
+
+  <a class="btn" href="https://instagram.com/total_changedstyles" target="_blank">
+    Book via Instagram DM
+  </a>
 </section>
 
 <footer>
   <p>© 2026 Total Changed Styles</p>
 </footer>
 
+<!-- POLICIES POPUP -->
+<div id="policyModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.7);">
+  <div style="background:#fff; max-width:500px; margin:10% auto; padding:30px; border-radius:20px;">
+    <h3>Booking Policies</h3>
+    <ul>
+      <li>Deposits are non-refundable</li>
+      <li>No call / no show = booking ban</li>
+      <li>15+ minutes late may result in cancellation</li>
+      <li>Hair must be clean & dry unless stated</li>
+    </ul>
+    <button class="btn" onclick="document.getElementById('policyModal').style.display='none'">
+      Close
+    </button>
+  </div>
+</div>
+
 </body>
-</html>
