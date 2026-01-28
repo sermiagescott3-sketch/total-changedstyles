@@ -67,7 +67,7 @@
 <section>
   <h2>February Special 💕</h2>
   <p style="text-align:center; font-size:1.2rem;"><strong>$55.55 February Hair Deal</strong></p>
-  <p style="text-align:center;">Quick - Weaves • Frontal Wigs • Half Up - Half Down</p>
+  <p style="text-align:center;">Quick -weaves • Frontal Wigs / Wig coloring • Half up - Half Down </p>
 </section>
 
 <section>
@@ -87,8 +87,33 @@
 
 <section class="cta">
   <h2>Book Now</h2>
-  <p>To book, please DM with your desired style, date, and time.</p>
-  <a class="btn" href= "https://formspree.io/f/mbdyrzbj target" ="_blank">Book via Instagram DM</a>
+  <p>Please submit a booking request below or DM with your desired style, date, and time.</p>
+
+  <!-- Booking Form -->
+  <form action="https://formspree.io/f/yourformid" method="POST" style="max-width:500px; margin:30px auto; text-align:left;">
+    <label>Name</label><br />
+    <input type="text" name="name" required style="width:100%; padding:10px; margin-bottom:10px;" />
+
+    <label>Email</label><br />
+    <input type="email" name="email" required style="width:100%; padding:10px; margin-bottom:10px;" />
+
+    <label>Service</label><br />
+    <input type="text" name="service" required style="width:100%; padding:10px; margin-bottom:10px;" />
+
+    <label>Preferred Date & Time</label><br />
+    <input type="text" name="datetime" required style="width:100%; padding:10px; margin-bottom:10px;" />
+
+    <label>Additional Notes</label><br />
+    <textarea name="message" style="width:100%; padding:10px; margin-bottom:15px;"></textarea>
+
+    <button type="submit" class="btn">Submit Booking Request</button>
+  </form>
+
+  <!-- Calendar Embed -->
+  <h3 style="margin-top:40px;">Availability Calendar</h3>
+  <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendarid" style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+  <a class="btn" href="https://formspree.io/f/mbdyrzbj" target="_blank">Book via Instagram DM</a>
 </section>
 
 <footer>
