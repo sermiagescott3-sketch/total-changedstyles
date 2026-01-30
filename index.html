@@ -158,6 +158,21 @@ p, li {
 .booking-trust {
   text-shadow: 0 0 8px rgba(233,30,99,0.25);
 }
+#policyModal div {
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media (max-width: 768px) {
   .floating-book {
     bottom: 90px;
