@@ -111,6 +111,47 @@ p {
   .floating-book {
     bottom: 90px;
   }
+.booking-card {
+  background: linear-gradient(180deg, #ffffff, #f9f3f6);
+  border-radius: 30px;
+  padding: 35px;
+  box-shadow: 0 25px 55px rgba(0,0,0,0.15);
+  max-width: 900px;
+  margin: auto;
+}
+
+.booking-intro h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.booking-intro p {
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 25px;
+}
+.booking-card {
+  position: relative;
+}
+
+.booking-card::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #f6b1c3, #e91e63);
+  opacity: 0.2;
+  z-index: -1;
+}
+.booking-trust {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 20px;
 }
   </style>
 </head>
@@ -161,6 +202,9 @@ Please arrive on time with hair clean, dry, and detangled 💗
 </section>
 
 <section class="cta">
+  <div class="booking-trust">
+  💎 $20 Deposit Required • ⏱ 10-Minute Grace Period • ✨ Professional Service
+</div>
   <h2>Book Your Appointment 💎</h2>
 <p>
 Appointments are secured with a <strong>$20 non-refundable deposit</strong>.
@@ -196,6 +240,15 @@ Remaining balance is due at your appointment.
 
     <div style="text-align:center; margin-top:20px;">
       <button class="btn" onclick="closePolicies()">Close</button>
+      <div class="booking-card">
+  <div class="booking-intro">
+    <h2>Secure Your Appointment</h2>
+    <p>Luxury service • Limited availability • Deposit required</p>
+  </div>
+
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/total_changedstyles"
+       style="min-width:320px;height:700px;">
     </div>
   </div>
 </div>
