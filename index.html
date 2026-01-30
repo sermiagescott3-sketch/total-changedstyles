@@ -162,7 +162,38 @@ p, li {
   box-shadow: 0 30px 60px rgba(0,0,0,0.3);
   animation: fadeIn 0.3s ease;
 }
-
+header {
+  background: linear-gradient(135deg, #f6b1c3, #fce4ec);
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+section {
+  padding: 50px 30px;
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(255,255,255,0.9);
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+.calendly-inline-widget {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05),
+              0 30px 70px rgba(233,30,99,0.25);
+}h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #f6b1c3, #e91e63);
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -184,7 +215,9 @@ p, li {
 
 <header>
   <h1>Total Changed Styles</h1>
-  <p>Where Your Style Gets a Total Change ✨</p>
+  <p style="letter-spacing:2px; text-transform:uppercase;">
+  Where Your Style Gets a Total Change ✨
+</p>
   <p><strong>Online Booking Available • DM for Questions Only</strong></p>
 </header>
 
