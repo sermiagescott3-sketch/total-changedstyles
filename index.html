@@ -106,11 +106,6 @@ p {
   line-height: 1.7;
   font-weight: 300;
 }
-
-@media (max-width: 768px) {
-  .floating-book {
-    bottom: 90px;
-  }
 .booking-card {
   background: linear-gradient(180deg, #ffffff, #f9f3f6);
   border-radius: 30px;
@@ -152,6 +147,11 @@ p {
   letter-spacing: 1px;
   color: #555;
   margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .floating-book {
+    bottom: 90px;
+  }
 }
   </style>
 </head>
@@ -202,20 +202,23 @@ Please arrive on time with hair clean, dry, and detangled 💗
 </section>
 
 <section class="cta">
-  <div class="booking-trust">
-  💎 $20 Deposit Required • ⏱ 10-Minute Grace Period • ✨ Professional Service
-</div>
-  <h2>Book Your Appointment 💎</h2>
-<p>
-Appointments are secured with a <strong>$20 non-refundable deposit</strong>.
-Remaining balance is due at your appointment.
-</p>
+  <div class="booking-card">
 
-<div class="calendly-inline-widget"
-     data-url="https://calendly.com/total_changedstyles"
-     style="min-width:320px;height:700px;">
-</div>
+    <div class="booking-trust">
+      💎 $20 Deposit Required • ⏱ 10-Minute Grace Period • ✨ Professional Service
+    </div>
 
+    <div class="booking-intro">
+      <h2>Secure Your Appointment</h2>
+      <p>Luxury service • Limited availability • Deposit required</p>
+    </div>
+
+    <div class="calendly-inline-widget"
+         data-url="https://calendly.com/total_changedstyles"
+         style="min-width:320px;height:700px;">
+    </div>
+
+  </div>
 </section>
 <div style="text-align:center; margin:40px 0;">
   <button class="btn" onclick="openPolicies()">View Booking Policies</button>
@@ -240,17 +243,7 @@ Remaining balance is due at your appointment.
 
     <div style="text-align:center; margin-top:20px;">
       <button class="btn" onclick="closePolicies()">Close</button>
-      <div class="booking-card">
-  <div class="booking-intro">
-    <h2>Secure Your Appointment</h2>
-    <p>Luxury service • Limited availability • Deposit required</p>
-  </div>
-
-  <div class="calendly-inline-widget"
-       data-url="https://calendly.com/total_changedstyles"
-       style="min-width:320px;height:700px;">
-    </div>
-  </div>
+ 
 </div>
 
 <script>
