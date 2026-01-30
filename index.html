@@ -67,7 +67,13 @@
 <section>
   <h2>February Special 💕</h2>
   <p style="text-align:center; font-size:1.4rem;"><strong>$55.55 February Hair Deal</strong></p>
-  <p style="text-align:center;">Quick-Weaves • Frontal Wigs • Wig Coloring • Half Up / Half Down</p>
+ <p style="text-align:center;">
+<strong>Included Styles Only:</strong><br>
+Quick-Weaves • Frontal Wig Installs • Stitch Braids • Kids Styles
+</p>
+<p style="text-align:center; font-size:0.9rem;">
+Hair not included • Add-ons priced separately
+</p>
 </section>
 
 <section>
@@ -104,20 +110,32 @@ Remaining balance is due at your appointment.
 </footer>
 
 <!-- POLICIES POPUP -->
-<div id="policyModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.7);">
-  <div style="background:#fff; max-width:500px; margin:10% auto; padding:30px; border-radius:20px;">
-    <h3>Booking Policies</h3>
+<div id="policyModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:999;">
+  <div style="background:#fff; max-width:500px; margin:10% auto; padding:30px; border-radius:20px; text-align:left;">
+    <h3 style="text-align:center;">Booking Policies</h3>
     <ul>
-      <li>Deposits are non-refundable</li>
+      <li>$20 non-refundable deposit required</li>
+      <li>10-minute grace period</li>
+      <li>15+ minutes late = cancellation</li>
       <li>No call / no show = booking ban</li>
-      <li>15+ minutes late may result in cancellation</li>
+      <li>Remaining balance due at appointment</li>
       <li>Hair must be clean & dry unless stated</li>
     </ul>
-   <button class="btn" onclick="document.getElementById('policyModal').style.display='block'">
-  View Booking Policies
-</button>
+
+    <div style="text-align:center; margin-top:20px;">
+      <button class="btn" onclick="closePolicies()">Close</button>
+    </div>
   </div>
 </div>
+
+<script>
+  function openPolicies() {
+    document.getElementById('policyModal').style.display = 'block';
+  }
+  function closePolicies() {
+    document.getElementById('policyModal').style.display = 'none';
+  }
+</script>
 
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
